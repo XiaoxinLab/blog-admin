@@ -1,0 +1,35 @@
+{
+  "name": "blog-admin",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Blog Server 后台管理系统",
+  "scripts": {
+    "dev": "vite --mode development",
+    "build": "vite build --mode production",
+    "preview": "vite preview --mode production"
+  },
+  "dependencies": {
+    "@fontsource-variable/chivo": "^5.3.0",
+    "@fontsource-variable/outfit": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/archivo-black": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/newsreader": "^5.3.0",
+    "@fontsource/noto-sans-sc": "^5.3.1",
+    "@fontsource/noto-serif-sc": "^5.3.1",
+    "axios": "^1.7.9",
+    "lucide-vue-next": "^1.0.0",
+    "markdown-it": "^14.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.7"
+  }
+}

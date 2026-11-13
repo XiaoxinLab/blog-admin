@@ -1,0 +1,93 @@
+﻿/* ============================================================
+   Blog 后台管理系统 - 设计令牌
+   ------------------------------------------------------------
+   一套标准后台配色：中性灰蓝 + 一个靛蓝强调色。
+   浅色和深色是同一套色相的两档明度，不是两套风格。
+   ============================================================ */
+
+:root {
+  /* 字体 */
+  --font-sans: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-display: 'Inter', 'Noto Sans SC', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+
+  /* 圆角 */
+  --radius-control: 6px;
+  --radius-card: 8px;
+  --radius-tag: 4px;
+  --radius-lg: 10px;
+
+  /* 版面尺寸 */
+  --sidebar-w: 224px;
+  --header-h: 56px;
+}
+
+/* ============================ 深色 ============================ */
+[data-theme='dark'] {
+  --bg-page: #14161a;
+  --bg-sidebar: #101216;
+  --bg-header: #14161a;
+  --bg-card: #1a1d22;
+  --bg-raised: #22262c;
+  --bg-input: #1e2127;
+  --bg-hover: rgba(255, 255, 255, 0.045);
+  --bg-active: rgba(99, 102, 241, 0.12);
+
+  --text-primary: #e6e8ec;
+  --text-secondary: #9aa1ac;
+  --text-muted: #6b727d;
+  --text-on-brand: #ffffff;
+  --text-on-brand-muted: rgba(255, 255, 255, 0.75);
+
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(99, 102, 241, 0.55);
+
+  --accent: #6366f1;
+  --accent-hover: #7c7ff3;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(99, 102, 241, 0.13);
+
+  --positive: #34d399;
+  --positive-soft: rgba(52, 211, 153, 0.13);
+  --negative: #f87171;
+  --negative-soft: rgba(248, 113, 113, 0.13);
+  --caution: #fbbf24;
+  --caution-soft: rgba(251, 191, 36, 0.13);
+
+  --shadow-float: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+/* ============================ 浅色 ============================ */
+[data-theme='light'] {
+  --bg-page: #f4f5f7;
+  --bg-sidebar: #ffffff;
+  --bg-header: #ffffff;
+  --bg-card: #ffffff;
+  --bg-raised: #f1f3f5;
+  --bg-input: #ffffff;
+  --bg-hover: rgba(15, 23, 42, 0.04);
+  --bg-active: rgba(99, 102, 241, 0.08);
+
+  --text-primary: #1f2937;
+  --text-secondary: #55606e;
+  --text-muted: #8b95a3;
+  --text-on-brand: #ffffff;
+  --text-on-brand-muted: rgba(255, 255, 255, 0.78);
+
+  --line: rgba(15, 23, 42, 0.1);
+  --line-strong: rgba(99, 102, 241, 0.45);
+
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(79, 70, 229, 0.09);
+
+  --positive: #059669;
+  --positive-soft: rgba(5, 150, 105, 0.1);
+  --negative: #dc2626;
+  --negative-soft: rgba(220, 38, 38, 0.09);
+  --caution: #d97706;
+  --caution-soft: rgba(217, 119, 6, 0.1);
+
+  --shadow-float: 0 4px 16px rgba(15, 23, 42, 0.1);
+}
