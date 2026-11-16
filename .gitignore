@@ -12,3 +12,6 @@ yarn-error.log*
 .chrome-profile/
 .tmp-*
 shots/
+
+# 打包好的部署产物
+blog-admin-dist*.zip
