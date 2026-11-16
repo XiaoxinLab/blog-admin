@@ -92,6 +92,7 @@ import {
   LogOut,
   Menu,
   Moon,
+  Puzzle,
   Sun,
   Tags,
   UserCog
@@ -120,7 +121,8 @@ const navGroups = [
     items: [
       { path: '/articles', label: '文章', icon: BookText, admin: true },
       { path: '/projects', label: '项目', icon: FolderKanban, admin: true },
-      { path: '/dictionary', label: '字典', icon: Tags, admin: true }
+      { path: '/dictionary', label: '字典', icon: Tags, admin: true },
+      { path: '/widgets', label: '组件', icon: Puzzle, admin: true }
     ]
   },
   {

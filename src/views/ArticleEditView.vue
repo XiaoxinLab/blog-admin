@@ -276,8 +276,13 @@ async function handleSave() {
       article_author: form.article_author,
       article_classification: finalClassification.value,
       article_content: form.article_content,
-      article_img: form.article_img,
-      article_file_url: form.article_file_url || null
+      article_img: form.article_img
+    }
+
+    // 说明：服务端不接受 article_file_url 为 null 或空字符串，
+    // 只能整个不传这个字段，所以这里按需添加
+    if (form.article_file_url) {
+      payload.article_file_url = form.article_file_url
     }
 
     if (isEdit.value) {

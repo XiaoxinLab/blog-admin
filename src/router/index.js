@@ -65,6 +65,12 @@ const routes = [
         meta: { title: '字典管理', admin: true }
       },
       {
+        path: 'widgets',
+        name: 'widget-list',
+        component: () => import('@/views/WidgetView.vue'),
+        meta: { title: '组件管理', admin: true }
+      },
+      {
         path: 'visit',
         name: 'visit',
         component: () => import('@/views/VisitView.vue'),
