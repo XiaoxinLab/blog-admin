@@ -1,11 +1,18 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import { isLoggedIn, isAdmin } from '@/utils/auth'
 import { toastError } from '@/utils/toast'
 
 /**
+ * 应用的部署路径
+ * 说明：本地开发是 /，线上放在 /admin/ 子目录下，
+ *       由 .env 里的 VITE_BASE_PATH 控制，两边都能跑。
+ */
+const BASE_PATH = import.meta.env.VITE_BASE_PATH || '/'
+
+/**
  * 路由表
- * 说明：使用 hash 模式（地址栏形如 /#/articles），
- * 因为后台打包后是纯静态文件，hash 模式不需要服务器额外配置重写规则。
+ * 说明：用 history 模式，地址栏形如 /admin/articles，不带 # 号。
+ *       代价是服务器要做一次重写：找不到的路径都交给 index.html。
  */
 const routes = [
   {
@@ -92,7 +99,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(BASE_PATH),
   routes,
   scrollBehavior: () => ({ top: 0 })
 })
